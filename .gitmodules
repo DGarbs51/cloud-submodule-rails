@@ -1,0 +1,3 @@
+[submodule "gems/hello_gem"]
+	path = gems/hello_gem
+	url = https://github.com/dgarbs51/cloud-submodule-gem.git
