@@ -18,4 +18,9 @@ group :development, :test do
 end
 
 # Lives in the git submodule gems/hello_gem (dgarbs51/cloud-submodule-gem).
-gem "hello_gem", path: "gems/hello_gem"
+# Optional group: Laravel Cloud runs `bundle install` before the submodule is
+# copied into the image, so the group is skipped there and enabled by the build
+# command (bundle config set --local with submodule && bundle install).
+group :submodule, optional: true do
+  gem "hello_gem", path: "gems/hello_gem"
+end

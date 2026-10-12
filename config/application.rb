@@ -17,6 +17,9 @@ require "action_view/railtie"
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
+# hello_gem sits in the optional :submodule group, which Rails.groups does not
+# include. Enable it with: bundle config set --local with submodule
+require "hello_gem"
 
 module CloudSubmoduleRails
   class Application < Rails::Application
