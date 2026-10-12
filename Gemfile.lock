@@ -1,5 +1,6 @@
-PATH
-  remote: gems/hello_gem
+GIT
+  remote: https://github.com/dgarbs51/cloud-submodule-gem.git
+  revision: 8e7bf2c1e6847c1f204a8483beb157c945cb457f
   specs:
     hello_gem (0.1.0)
 

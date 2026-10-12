@@ -17,5 +17,5 @@ group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
 end
 
-# Lives in the git submodule gems/hello_gem (dgarbs51/cloud-submodule-gem).
-gem "hello_gem", path: "gems/hello_gem"
+# Fetched by Bundler from the (private) gem repo; no submodule.
+gem "hello_gem", git: "https://github.com/dgarbs51/cloud-submodule-gem.git"
